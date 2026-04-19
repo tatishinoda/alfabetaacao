@@ -51,15 +51,15 @@
     // Form customization
     if ($("form").length) {
         setupContactForm();
-        // Styling a Form
-        jcf.setOptions('Select', {
-            wrapNative: false,
-            useCustomScroll: false,
-            fakeDropInBody: false
-        });
-        jcf.replaceAll();
-        // Shape mask
-        $(".phone_mask").mask("(00) 00000-0000");
+        // Style only native <select> fields (avoid replacing text/tel inputs).
+        if (window.jcf && $("select").length) {
+            jcf.setOptions('Select', {
+                wrapNative: false,
+                useCustomScroll: false,
+                fakeDropInBody: false
+            });
+            jcf.replace(document.querySelectorAll("select"));
+        }
     }
     function setupContactForm() {
         let contactForm = document.getElementById("subscription-form-post");

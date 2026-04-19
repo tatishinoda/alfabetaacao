@@ -78,7 +78,7 @@
         let email = document.getElementById("email");
         let phone = document.getElementById("phone");
         let textInput = document.getElementById("text-input");
-        let mobileNumber = 5511981916080; // Enter your mobile number here
+        let mobileNumber = 5511977443418; // Enter your mobile number here
 
         if (name.value.trim() == "") {
             name.style.background = "lightpink";

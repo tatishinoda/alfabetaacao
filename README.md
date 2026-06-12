@@ -38,12 +38,8 @@ Como é um projeto estático, você pode abrir o `index.html` diretamente no nav
 
 Se preferir um servidor local:
 
-1. Com VS Code + Live Server, clique em **Go Live**.
-2. Ou use Python:
+ Com VS Code + Live Server, clique em **Go Live**.
 
-```bash
-python -m http.server 5500
-```
 
 Depois acesse: `http://localhost:5500`
 
@@ -56,7 +52,7 @@ Arquivo: `js/main.js`
 Procure por:
 
 ```js
-let mobileNumber = 5511981916080;
+let mobileNumber = 
 ```
 
 Troque para o número desejado no formato internacional (DDI + DDD + número, sem símbolos).
